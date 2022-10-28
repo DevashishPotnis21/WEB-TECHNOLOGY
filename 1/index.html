@@ -1,0 +1,178 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.2.0/css/all.min.css">
+    <script src="https://code.jquery.com/jquery-3.6.1.min.js" integrity="sha256-o88AwQnZB+VDvE9tvIXrMQaPlFFSUTR+nldQm1LuPXQ=" crossorigin="anonymous"></script>
+    <title>Document</title>
+</head>
+<body>
+    <!-- sidebar -->
+    <section id="menu">   
+            <div class="logo">
+                <h3><a href="#">Dashboard</a></h3>
+            </div>
+            <div class="items">
+                <li><i class="fa-solid fa-chart-pie"></i><a href="#">Dashboard</a></li>
+                <li><i class="fas fa-th-large"></i><a href="#">Table</a></li>
+                <li><i class="fas fa-edit"></i><a href="#">Forms</a></li>
+                <li><i class="fab fa-cc-visa"></i><a href="#">Cards</a></li>
+                <li><i class="fas fa-chart-line"></i><a href="#">Blank</a></li>
+            </div>      
+    </section>
+
+    <!-- navbar -->
+
+    <section id="interface">
+        <div class="navigation">
+            <div class="n1">
+               <div>
+                <i id="menu-btn" class="fas fa-bars"></i>
+               </div>
+                <div class="search">
+                    <i class="fas fa-search"></i>
+                <input type="text" placeholder="Search">
+                </div>
+            </div>
+
+            <div class="profile">
+          
+            </div>
+        </div>
+        
+    
+     <h3 class="i-name">Dashboard</h3>
+
+     <div class="values">
+        <div class="val-box">
+            <i class="fas fa-users"></i>
+            <div>
+                <h3>3000</h3>
+            <span>New Users</span>
+            </div>
+        </div>
+        <div class="val-box">
+            <i class="fas fa-shopping-cart"></i>
+            <div>
+                <h3>20000</h3>
+            <span>Total Orders</span>
+            </div>
+        </div>
+        <div class="val-box">
+            <i class="fas fa-hand-holding-usd"></i>
+            <div>
+                <h3>21586</h3>
+            <span>Products Sell</span>
+            </div>
+        </div>
+        <div class="val-box">
+            <i class="fas fa-dollar-sign"></i>
+            <div>
+                <h3>$677.89</h3>
+            <span>This Month</span>
+            </div>
+        </div>
+     </div>
+
+     <div class="board">
+        <table width="100%">
+            <thead>
+                <tr>
+                    <td>Name</td>
+                    <td>Title</td>
+                    <td>Status</td>
+                    <td>Role</td>
+                    <td></td>
+                </tr>
+            </thead>
+            <tbody>
+               
+                <tr>
+                    <td class="people">
+
+                        <div class="people-dec">
+                            <h5>Devashish Potnis</h5>
+                            <p>devashishs@gmail.com</p>
+                        </div>
+                    </td>
+                    <td class="poeple-des">
+                        <h5>CEO</h5>
+                        <p>Web Dev</p>
+                    </td>
+                    <td class="active"><p>Active</p></td>
+                    <td class="role">
+                        <p>Owner</p>
+                    </td>
+                    <td class="edit"><a href="#">Edit</a></td>
+                </tr>
+                <tr>
+                    <td class="people">
+                        <div class="people-dec">
+                            <h5>Deep Uthale</h5>
+                            <p>deep@gmail.com</p>
+                        </div>
+                    </td>
+                    <td class="poeple-des">
+                        <h5>Software Engineer</h5>
+                        <p>Web Dev</p>
+                    </td>
+                    <td class="active"><p>Active</p></td>
+                    <td class="role">
+                        <p>Owner</p>
+                    </td>
+                    <td class="edit"><a href="#">Edit</a></td>
+                </tr>
+               
+                    <td class="people">
+                        <div class="people-dec">
+                            <h5>Chinmay Phadkule</h5>
+                            <p>chinmay@gmail.com</p>
+                        </div>
+                    </td>
+                    <td class="poeple-des">
+                        <h5>Software Engineer</h5>
+                        <p>Web Dev</p>
+                    </td>
+                    <td class="active"><p>Active</p></td>
+                    <td class="role">
+                        <p>Owner</p>
+                    </td>
+                    <td class="edit"><a href="#">Edit</a></td>
+                </tr>
+                <tr>
+                    <td class="people">
+                        <div class="people-dec">
+                            <h5>Atharava Joshi</h5>
+                            <p>atharava@gmail.com</p>
+                        </div>
+                    </td>
+                    <td class="poeple-des">
+                        <h5>Software Engineer</h5>
+                        <p>Web Dev</p>
+                    </td>
+                    <td class="active"><p>Active</p></td>
+                    <td class="role">
+                        <p>Owner</p>
+                    </td>
+                    <td class="edit"><a href="#">Edit</a></td>
+                </tr>
+               
+            </tbody>
+        </table>
+     </div>
+    </section>
+
+    <script>
+        $('menu-btn').click(function(){
+           $('menu').toggleClass("active");
+        })
+    </script>
+
+    
+
+    
+</body>
+</html>
